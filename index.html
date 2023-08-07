@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Zone</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+    body{
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background-image:url(athletic-man-woman-with-dumbbells_155003-11804.jpg);
+        background-size: cover;
+        /* background-size: 1550px; */
+    }
+    .left{
+        display: inline block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+    .left img{
+        width: 120px;
+    }
+    .left div{
+         text-align: center;
+         line-height: 19px;
+         font-size: 26px;
+    }
+
+    .mid{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        display: block;
+        width: 36%;
+        margin: 20px auto;
+        /* border: 2px solid yellow; */
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 25px;
+        display: inline block;
+        /* border: 2px solid green; */
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 15px;
+    }
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: grey;
+    }
+    .btn{
+        font-family:monospace;
+        margin: 0px 9px;
+        background-color: black;
+        color:white;
+        padding: 5px 18px;
+        border: 2px solid gray;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .btn:hover{             /*For call us now  and email us now*/
+        background-color: rgb(155, 143, 143);
+        /* background-color: red; */
+    }
+    .container{
+        border: 2px solid white;
+        margin: 106px 80px;
+        padding:75px;
+        width: 33%;
+        border-radius: 28px;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 400px;
+        padding: 1px;
+        border: 2px solid blueviolet;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 80px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 30%;
+        margin: 17px auto;
+    }
+    .container{
+        color: rgb(95, 5, 5);
+        font-size:large;
+        font-weight:bold;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+</style>
+<body>
+    <header>
+        <!-- Left Box for logo -->
+        <div class="left">
+            <img src="img.webp" alt="logo">
+            <div>Fitness Zone</div>
+        </div>
+        <!-- Midbox for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness </a></li>
+                <li><a href="#">Contanct Us</a></li>
+            </ul>
+        </div>
+        <!-- Right box for button -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us now</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best GYM</h1>
+        <form action="noaction.java">
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Age">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Gender">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Weight">
+                </div>
+                <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
